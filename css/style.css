@@ -69,18 +69,18 @@ textarea {
 
 .conteiner {
 
-	width: 	800px;
-	height: 600px;
-	outline: 1px solid green;
-	margin: 50px auto;
+	width: 100%;
+	height: 100vh;
+	/* outline: 1px solid green; */
+	margin: 0 auto;
 	background: linear-gradient(to top right, #ff512f, #dd2476);
 	padding-top: 50px;
 }
 
 .form {
 	width: 	470px;
-	height: 470px;
-	background: #fff;
+/* 	height: 470px;
+ */	background: #fff;
 	
 	margin: 0 auto;
 	padding:30px;
@@ -103,13 +103,24 @@ a:active {
 	text-decoration: underline;
 	color: #000;
 
-
 }
-.key_icon, .title {
+
+/* .key_icon, .title {
 
 	display: inline-block;
 	margin: 0 7px 0 0;
 	color:#1b1c1d;
+} */
+.title {
+
+
+	
+	color:#1b1c1d;
+}
+.title:before {
+
+	content: url('../img/key_icon.png');
+	margin: 0 7px 0 0;
 }
 .subtitle {
 	font-size: 13px;
@@ -121,8 +132,8 @@ a:active {
 fieldset {
 
 	padding: 0;
-		margin: 0 auto;
-		border-radius: 3px ;
+	margin: 0 auto;
+	/* border-radius: 3px ; */
 	border: none;
 	font-size: 0;
 }
@@ -139,9 +150,16 @@ input {
 	width: 100%;
 	border-radius: 3px ;
 	border: none;
+	border-bottom: 1px solid transparent;
 	padding: 1em;
 	margin-bottom: 15px;
 
+}
+input:focus {
+
+	outline:none;
+	border-bottom: 1px solid #7a7b7f;
+	
 }
 input[name="first_name"] {
 
@@ -157,19 +175,34 @@ input[name="first_name"] {
 	border-radius: 8px ;
 	padding: 1em;
 	margin-bottom: 30px;
-	border: none;
+	border-bottom: 2px solid #bd1962;
 
 
 }
 .btn:hover,
-.btn:focus,
 .btn:active {
 
 background: #7a7b7f;
+
+	outline:none;
+	border-bottom: 2px solid #555555;
+
+	
+}
+
+.btn:focus
+{
+
+background: #7a7b7f;
+
+	outline:none;
+	border-bottom: 2px solid #000;
+
 	
 }
 .foot-text {
 
 	font-size: 12px;
+
 }
 
